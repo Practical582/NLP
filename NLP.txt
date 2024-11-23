@@ -24,35 +24,11 @@ pos_tags = hmm_tagger.tag(sentence)
 print("POS Tags:", pos_tags)
 pos_tags =hmm_tagger.tag(sentence)
 print("POS Tags:", pos_tags)
-Output:
-[nltk_data] Downloading package treebank to /root/nltk_data...
-[nltk_data] Unzipping corpora/treebank.zip.
-Output:
-[nitk_data] Downloading package treebank to /root/nltk_data...
-[nltk_data]
-Unzipping corpora/treebank.zip.
-/usr/local/lib/python3.10/dist-packages/nltk/tag/hmm.py:333: RuntimeWarning: overflow encountered in cast
-/usr/local/lib/python3.10/dist-packages/nltk/tag/hmm.py:333: RuntimeWarning: overflow encountered in cast
-X[i, j] = self._transitions[si].logprob(self._states[j])
-X{[i,
-= self._transitions[si].logprob(self._states[j])
-/usr/local/lib/python3.10/dist-packages/nltk/tag/hmm.py:335: RuntimeWarning: overflow encountered in cast
-O[i, k] = self._output_logprob(si, self._symbols[k])
-/usr/local/lib/python3.10/dist-packages/nltk/tag/hnmm.py:335: RuntimeWarning: overflow encountered in cast
-O[i, k] =self._output_logprob(si, self._symbols[k])
-/usr/local/lib/python3.10/dist-packages/nltk/tag/hnmm.py:331: RuntimeWarning: overflow encountered in cast
-/usr/local/lib/python3.10/dist-packages/nltk/tag/hmm.py:331: RuntimeWarning: overflow encountered in cast
-P[i] = self._priors.logprob(si)
-P[i] =self._priors.logprob(si)
-POS Tags: [('‘The’, 'DT’), (‘quick’, 'JJ'), (‘brown’, 'NNP’), (‘fox’, 'NNP’), (jumps! 'NNP’), (‘over’, 'NNP’), (‘the’, 'NNP’), (‘lazy’,
-mvp’), ‘dog’ 'NNP')]
-POS Tags: [('The', 'DT'), ('quick', 'JJ'), ('brown', 'NNP'), ('fox', 'NNP'), ('jumps', 'NNP'), ('over', 'NNP'), ('the', 'NNP'), ('lazy',
-'NNP'), ('dog', 'NNP')]
-vusr/.ocal/lib/python3.10/dist-packages/nltk/tag/hnmm.py:363: RuntimeWarning: overflow encountered in cast
-on ti —cslf, output_logprob(si, self._symbols[k])
-/usr/local/lib/python3.10/dist-packages/nltk/tag/hmm.py:363: RuntimeWarning: overflow encountered in cast
-O[i, k] = self._output_logprob(si, self._symbols[k])
-—.L?
+
+
+
+
+
 
 Practical No. 10: Implement RNN for sequence labelling and show some output
 Date: /1 /2024
@@ -159,76 +135,9 @@ example_text = "This movie was absolutely terrible. The acting was awful and the
 example_features = find_features(word_tokenize(example_text.lower()))
 prediction = classifier.classify(example_features)
 print(f"Prediction for '{example_text}': {prediction}")
-Output:
-[nltk_data] Downloading package movie_reviews to /root/nltk_data...
-[nltk_data]
-Unzipping corpora/movie_reviews.zip.
-[nltk_data] Downloading package punkt to /root/nltk_data...
-[nltk_data]
-Package punkt is already up-to-date!
-Classifier accuracy percent: 82.0
-Most Informative Features
-sucks = True
-frances = True
-unimaginative = True
-annual = True
-stellan = True
-groan = True
-sexist = True
-silverstone = True
-schumacher = True
-idiotic = True
-shoddy = True
-atrocious = True
-regard = True
-turkey = True
-kombat = True
-neg: pos
-pos: neg
-neg: pos
-pos: neg
-pos: neg
-neg: pos
-neg: pos
-neg: pos
-neg: pos
-neg: pos
-neg: pos
-neg: pos
-pos: neg
-neg: pos
-neg: pos
-=
-=
-=
-=
-=
-=
-=
-=
-=
-=
-=
-=
-=
-=
-=
-10.4: 1.0
-8.9: 1.0
-8.5: 1.0
-8.2: 1.0
-8.2: 1.0
-7.8: 1.0
-7.8: 1.0
-7.8: 1.0
-7.5: 1.0
-7.1: 1.0
-7.1: 1.0
-6.7: 1.0
-6.5: 1.0
-6.4: 1.0
-6.4: 1.0
-Prediction for ‘This movie was absolutely terrible. The acting was awful and the plot was confusing.': neg
+
+
+
 
 Practical No. 02: Find the synonym /antonym of a word using WordNet.
 Date: 03/09/2024
